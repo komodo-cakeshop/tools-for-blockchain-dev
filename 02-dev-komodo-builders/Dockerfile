@@ -1,7 +1,6 @@
 FROM komodocakeshop/dev-zcash-params
 RUN apt-get update && \
     apt-get -y install \
-    git \
     build-essential \
     pkg-config \
     libc6-dev \
