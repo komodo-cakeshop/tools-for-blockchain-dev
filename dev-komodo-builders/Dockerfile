@@ -1,0 +1,32 @@
+FROM komodocakeshop/dev-zcash-params
+RUN apt-get update && \
+    apt-get -y install \
+    git \
+    build-essential \
+    pkg-config \
+    libc6-dev \
+    m4 \
+    autoconf \
+    libboost-all-dev \
+    libsodium-dev \
+    curl \
+    libtool \
+    make \
+    ncurses-dev \
+    unzip \
+    python \
+    zlib1g-dev \
+    wget \
+    bsdmainutils \
+    automake \
+    libssl-dev \
+    libprotobuf-dev \
+    protobuf-compiler \
+    libqrencode-dev \
+    libdb++-dev \
+    libcurl4-gnutls-dev \
+    libgconf-2-4 && \
+    apt-get -y clean; \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+CMD ["/bin/bash"]
