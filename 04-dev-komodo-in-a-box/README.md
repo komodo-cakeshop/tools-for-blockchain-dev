@@ -35,4 +35,7 @@ If you have zcash params locally, you can save yourself 1GB of download and moun
 ```
 docker pull komodocakeshop/dev-komodo-in-a-box:0.1-0.4.0a
 docker run -it -v /home/mylo/.zcash-params:/root/.zcash-params:ro komodocakeshop/dev-komodo-in-a-box:0.1-0.4.0a
+you'll be dropped into a shell
+cd /komodo-in-a-box
+setup/start.sh
 ```
